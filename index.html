@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/JLfavicon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>JD Lepinski</title>
+</head>
+
+<header>
+    <h1>JD Lepinski</h1>
+    <button id="themedarklight">
+        Toggle Dark Mode
+    </button>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Hobbies</a>
+        <a href="contact.html">Contact Me</a>
+    </nav>
+
+    <hr>
+</header>
+
+<body>
+    <h3>About Me:</h3>
+    <p id="p1">
+        Welcome to my website! My name is JD, and I'm a junior 
+        computer science student at NMSU. I'm originally
+        from Ohio, but have lived all over the western US 
+        in the past several years. I've lived in Alaska,
+        Oregon, Washington, and Utah before 
+        coming to New Mexico to pursue my degree.
+    </p>
+    <img src="images/professional pic.jpg" height="200" alt="image of a strapping young lad">
+    <p id="p2">
+        I'm a total newcomer to web development, and this 
+        is my first website <b>EVER</b>, so take it 
+        easy on me. Feel free to look around and 
+        contact me if you have any questions!
+    </p>
+    <br>
+    <hr>
+
+    <script>
+    document.getElementById("themedarklight").onclick = function() {
+        document.getElementsByTagName("body")[0].classList.toggle("dark");
+        // update sessionStorage
+        if(document.body.classList.contains("dark")) {
+            sessionStorage.setItem("theme", "dark");
+        } else {
+            sessionStorage.setItem("theme", "light");
+        }
+    };
+    </script>
+        
+</body>
+
+<footer>
+    <h4>JD Lepinski Inc.</h4>
+    <p>JD Lepinski, 2024</p>
+    <a href="index.html">
+        Home
+    </a>
+</footer>
+
+</html>
