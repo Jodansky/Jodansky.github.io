@@ -1,0 +1,136 @@
+@media screen and (max-width: 600px) {
+    body {
+        padding: 5px;
+    }
+
+    h1, h3 {
+        font-size: smaller;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    img, iframe {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* body styling */
+body {
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    margin: 1;
+    padding: 20px;
+    background-color: hsl(137, 20%, 57%);
+    color: hsl(0, 0%, 17%);
+    line-height: 1.4;
+}
+
+/* dark theme styles */
+body.dark {
+    background-color: hsl(0, 0%, 7%); /* Dark background */
+    color: hsl(0, 0%, 88%); /* Lighter text */
+}
+
+/* dark theme header, paragraphs, and links */
+body.dark h1,
+body.dark h3,
+body.dark h4,
+body.dark a {
+    color: hsl(267, 95%, 76%); /* purple for contrast */
+}
+
+body.dark hr {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+/* link hover color in dark mode */
+body.dark a:hover {
+    color: hsl(174, 97%, 43%); /* teal for hover */
+}
+
+/* dark theme footer styles */
+body.dark footer {
+    background-color: hsl(267, 14%, 12%); /* darker shade for footer */
+    color: hsl(0, 0%, 88%); /* light text for contrast */
+}
+
+body.dark footer a,
+body.dark footer a:hover {
+    color: hsl(267, 95%, 76%);
+}
+
+/* header styles */
+h1, h3 {
+    color: hsl(0, 0%, 20%);
+}
+
+h4 {
+    color: hsl(137, 20%, 57%);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+hr {
+    margin-top: 20px;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/* navigation links */
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 29%);
+    display: inline-block;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+a:hover {
+    color: hsl(0, 0%, 70%);
+}
+
+/* paragraphs */
+p, li {
+    margin: 20px 0;
+    font-size: 1em;
+}
+
+/* image styling */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* iframe styling */
+iframe {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+/* footer styling */
+footer {
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    clear: both;
+    width: calc(100% - 40px);
+    font-size: small;
+}
+
+footer a {
+    color: hsl(0, 0%, 100%);
+}
+
+footer a:hover {
+    color: hsl(0, 0%, 80%);
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/JLfavicon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>JD Lepinski</title>
+</head>
+
+<header>
+    <h1>JD Lepinski</h1>
+    <button id="themedarklight">
+        Toggle Dark Mode
+    </button>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Hobbies</a>
+        <a href="contact.html">Contact Me</a>
+    </nav>
+
+    <hr>
+</header>
+
+<body>
+    <h3>I like to...</h3>
+    <ul>
+        <li>Play guitar
+            <br>
+            <img src="images/guitar.jpg" height="250" alt="PRS guitar">
+            <br>
+            (Been learning the main riff in this song lately)
+            <br>
+            <iframe height="200" src="https://www.youtube.com/embed/UAEr1EECMXk?si=eYrspLIKtcQO5lZz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </li>
+        <br>
+        <li>Play video games (poorly)
+            <a target="_blank" href="https://store.steampowered.com/wishlist/profiles/76561198400409200#sort=order">
+                *ahem*
+            </a>
+            <br>
+            <img src="images/youdied.gif" height="200" alt="a common sight">
+        </li>
+        <br>
+        <li>
+            Hang out with my girlfriend
+            <br>
+            <img src="images/gf.jpg" height="250" alt="with my girlfriend">
+        </li>
+        <br>
+    </ul>
+
+    <script>
+    document.getElementById("themedarklight").onclick = function() {
+        document.getElementsByTagName("body")[0].classList.toggle("dark");
+        // update sessionStorage
+        if(document.body.classList.contains("dark")) {
+            sessionStorage.setItem("theme", "dark");
+        } else {
+            sessionStorage.setItem("theme", "light");
+        }
+    };
+    </script>
+
+</body>
+
+<footer>
+    <h4>JD Lepinski Inc.</h4>
+    <p>JD Lepinski, 2024</p>
+    <a href="index.html">
+        Home
+    </a>
+</footer>
+
+</html>

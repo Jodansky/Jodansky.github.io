@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/JLfavicon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>JD Lepinski</title>
+</head>
+
+<header>
+    <h1>JD Lepinski</h1>
+    <button id="themedarklight">
+        Toggle Dark Mode
+    </button>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Hobbies</a>
+        <a href="contact.html">Contact Me</a>
+    </nav>
+
+    <hr>
+</header>
+
+<body>
+    <h3>I'm not hard to reach:</h3>
+    <br>
+    <a href="mailto:jodansk@nmsu.edu">
+        Send me an email!
+    </a>
+    <br>
+    <a href="mailto:jonahlepinski@gmail.com">
+        Send me a more personal email!
+    </a>
+    <br>
+    <a href="mailto:z9kcry@protonmail.com">
+        Send me a more secure email!
+    </a>
+    <br>
+    <a href="mailto:jonah.lepinski@gmail.com">
+        Send me an email at an inbox I never check!
+    </a>
+    <br>
+    <h4>Or you could...</h4>
+    <a target="_blank" href="https://www.instagram.com/jodansk?igsh=MXNkazluN2J0dDNsdA%3D%3D&utm_source=qr">
+        follow me on Instagram &#128073;&#128072;
+        <br>
+        <img src="images/insta.jpg" height="250">
+    </a>
+
+    <script>
+    document.getElementById("themedarklight").onclick = function() {
+        document.getElementsByTagName("body")[0].classList.toggle("dark");
+        // update sessionStorage
+        if(document.body.classList.contains("dark")) {
+            sessionStorage.setItem("theme", "dark");
+        } else {
+            sessionStorage.setItem("theme", "light");
+        }
+    };
+    </script>
+
+</body>
+
+<footer>
+    <h4>JD Lepinski Inc.</h4>
+    <p>JD Lepinski, 2024</p>
+    <a href="index.html">
+        Home
+    </a>
+</footer>
+
+</html>
