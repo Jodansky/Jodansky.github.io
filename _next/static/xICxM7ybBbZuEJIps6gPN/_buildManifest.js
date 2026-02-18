@@ -8,6 +8,18 @@ self.__BUILD_MANIFEST = {
   "/projects": [
     "static/chunks/bd12762e1a8891e9.js"
   ],
+  "/projects/jkdashboard": [
+    "static/chunks/df22b67a70040f62.js"
+  ],
+  "/projects/jkdashboard/drink-recipes": [
+    "static/chunks/769014ffe97f8e29.js"
+  ],
+  "/projects/jkdashboard/location-update-form": [
+    "static/chunks/b0c45dde02f70bc2.js"
+  ],
+  "/projects/jkdashboard/owner-dashboard": [
+    "static/chunks/23c11211edbf1474.js"
+  ],
   "/projects/mindtext": [
     "static/chunks/21008b71b8efd786.js"
   ],
@@ -27,6 +39,10 @@ self.__BUILD_MANIFEST = {
     "/_app",
     "/_error",
     "/projects",
+    "/projects/jkdashboard",
+    "/projects/jkdashboard/drink-recipes",
+    "/projects/jkdashboard/location-update-form",
+    "/projects/jkdashboard/owner-dashboard",
     "/projects/mindtext",
     "/projects/nmsuandme",
     "/projects/pennysworthe"
